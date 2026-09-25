@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HACKNOVA 2026 | Team Registration</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #050b0d;
+      color: white;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      color: #00eaff;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .form-box {
+      background: #0b1518;
+      border: 1px solid #17353b;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 0 25px rgba(0, 234, 255, 0.08);
+    }
+
+    .section-title {
+      color: #00eaff;
+      font-size: 20px;
+      margin: 25px 0 15px;
+      border-left: 4px solid #00eaff;
+      padding-left: 10px;
+    }
+
+    .section-title:first-child {
+      margin-top: 0;
+    }
+
+    .input-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 13px;
+      border-radius: 8px;
+      border: 1px solid #29464c;
+      background: #071013;
+      color: white;
+      outline: none;
+      font-size: 15px;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #00eaff;
+      box-shadow: 0 0 8px rgba(0, 234, 255, 0.2);
+    }
+
+    .member-box {
+      background: #081114;
+      border: 1px solid #17353b;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 15px;
+    }
+
+    .member-box h3 {
+      color: #8cf5ff;
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 25px;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #00eaff;
+      color: #001014;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #72f5ff;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 15px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .form-box {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>HACKNOVA 2026</h1>
+      <p>Team Registration</p>
+    </div>
+
+    <form class="form-box" id="registrationForm">
+
+      <!-- TEAM DETAILS -->
+      <div class="section-title">Team Details</div>
+
+      <div class="input-group">
+        <label>Team Name *</label>
+        <input type="text" name="teamName" placeholder="Enter team name" required>
+      </div>
+
+      <div class="input-group">
+        <label>College Name *</label>
+        <input type="text" name="collegeName" placeholder="Enter college name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Team Size *</label>
+        <select name="teamSize" required>
+          <option value="">Select team size</option>
+          <option value="4">4 Members</option>
+          <option value="5">5 Members</option>
+        </select>
+      </div>
+
+
+      <!-- TEAM LEADER -->
+      <div class="section-title">Team Leader</div>
+
+      <div class="member-box">
+
+        <div class="input-group">
+          <label>Leader Name *</label>
+          <input type="text" name="leaderName" placeholder="Enter leader name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Leader Email *</label>
+          <input type="email" name="leaderEmail" placeholder="Enter email address" required>
+        </div>
+
+        <div class="input-group">
+          <label>Leader Mobile *</label>
+          <input type="tel" name="leaderMobile"
+                 placeholder="Enter mobile number"
+                 maxlength="10"
+                 required>
+        </div>
+
+      </div>
+
+
+      <!-- MEMBER 2 -->
+      <div class="section-title">Team Members</div>
+
+      <div class="member-box">
+
+        <h3>Member 2</h3>
+
+        <div class="input-group">
+          <label>Name *</label>
+          <input type="text" name="member2Name"
+                 placeholder="Enter member name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email *</label>
+          <input type="email" name="member2Email"
+                 placeholder="Enter email" required>
+        </div>
+
+      </div>
+
+
+      <!-- MEMBER 3 -->
+      <div class="member-box">
+
+        <h3>Member 3</h3>
+
+        <div class="input-group">
+          <label>Name *</label>
+          <input type="text" name="member3Name"
+                 placeholder="Enter member name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email *</label>
+          <input type="email" name="member3Email"
+                 placeholder="Enter email" required>
+        </div>
+
+      </div>
+
+
+      <!-- MEMBER 4 -->
+      <div class="member-box">
+
+        <h3>Member 4</h3>
+
+        <div class="input-group">
+          <label>Name *</label>
+          <input type="text" name="member4Name"
+                 placeholder="Enter member name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email *</label>
+          <input type="email" name="member4Email"
+                 placeholder="Enter email" required>
+        </div>
+
+      </div>
+
+
+      <!-- MEMBER 5 -->
+      <div class="member-box">
+
+        <h3>Member 5 <span style="color:#777;">(Optional)</span></h3>
+
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" name="member5Name"
+                 placeholder="Enter member name">
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="member5Email"
+                 placeholder="Enter email">
+        </div>
+
+      </div>
+
+
+      <!-- PAYMENT -->
+      <div class="section-title">Payment Details</div>
+
+      <div class="input-group">
+        <label>Transaction ID *</label>
+        <input type="text" name="transactionId"
+               placeholder="Enter payment transaction ID"
+               required>
+      </div>
+
+
+      <button type="submit" class="submit-btn">
+        SUBMIT REGISTRATION
+      </button>
+
+      <p class="note">
+        * All required fields must be filled.
+      </p>
+
+    </form>
+
+  </div>
+
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      alert("Registration form ready! Backend connection will be added next.");
+
+    });
+  </script>
+
+</body>
+</html>
